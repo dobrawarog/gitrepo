@@ -5,7 +5,7 @@
 #  
 
 
-#F(n) = 0 dla n = 0
+#F(n) = 0 dla n = 0 #brzegowe warunki 
 #F(n) = 1 dla n = 1
 #f(n) = f(n-1) + f(n-2) DLA n > 1
 

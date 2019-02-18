@@ -20,11 +20,20 @@ def silnia_it(n):
         wynik = wynik * i
     return wynik
     
+def silnia_rek(n):
+    # n! = (n-1) * n
+    if n == 0:
+        return 1
+    return silnia_rek(n-1) * n 
 
 def main(args):
-    assert silnia_it(0) == 1
+    assert silnia_rek(0) == 1
+    assert silnia_rek(1) == 1
+    assert silnia_rek(2) == 2
+    assert silnia_rek(3) == 6
+
     n = int(input("Podaj liczbę naturalną: "))
-    print("{}! = {}" .format(n, silnia_it(n)))
+    print("{}! = {}" .format(n, silnia_rek(n)))
     return 0
 
 if __name__ == '__main__':
