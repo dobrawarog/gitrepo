@@ -4,18 +4,9 @@ body{
 	font:20px verdana,sans-serif;
 	overflow:auto;
 	margin:0}
-.tabtytul{ /* tabelka z grafik¹ (nag³ówek) */
-	background-color:#B43232;
-	border-bottom:2px solid #B43232}
-.tytul{ /* komórka z tytu³em */B43232
-	background-color:#;
-	color:#ffffff;
-	height:100px;
-	font:bold 36px verdana,sans-serif;
-	border-bottom:2px solid #c0c0c0;
-	text-align:center}
-.tytulnapis{ /* tytu³ strony z cieniem (tylko IE) */
-	padding-left:10px;width:400px;height:60px;filter:Shadow(Color=#666666,Direction=150)}
+
+
+
 .tabela{ /* tabela z planem */
 	border-color:#c0c0c0}
 td{
@@ -42,11 +33,11 @@ td.l{ /* lekcja */
 	color:#000000;
 	vertical-align:top}
 a.n{ /* nauczyciel */
-	color:#ffffff}
+	color:#B43232}
 a.s{ /* sala */
-	color:#ffffff}
+	color:#B43232}
 a.k{ /* klasa */
-	color:#ffffff}
+	color:#B43232}
 .p{ /* przedmiot */
 	color:#000000;
 	font-weight:bold}
