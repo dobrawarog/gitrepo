@@ -3,7 +3,7 @@
  * 
  * Copyright 2019  <>
  */
-#codeblocks 
+#code::blocks binaries mingww setup
 
 #include <iostream>
 
