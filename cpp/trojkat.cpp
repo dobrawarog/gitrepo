@@ -3,11 +3,11 @@
  */
 
 
-#include <iostream> 
+#include <iostream>
 
 using namespace std;
 #include <cmath>
-  
+
 int main(int argc, char **argv)
 {
     int b;
@@ -21,13 +21,19 @@ int main(int argc, char **argv)
     cin >> c;
     if ( a + b > c)
     {
-    if (a + c > b) 
+    if (a + c > b)
     {
-    if (b + c > a) 
+    if (b + c > a)
      cout << "Da się zrobic trojkat" << std::endl;}}
     else
      cout << "Nie da się zrobić trojkat" << std::endl;
-     
+
+     a, b, c;
+
+     {if (a^2 + b^2 = c^2)
+      cout <<"To tojkat prostokatny" >> std::endl;}
+     else
+      cout << "Nie da się zrobić trojkat" << std::endl;
 	return 0;
 }
 
