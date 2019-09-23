@@ -28,12 +28,10 @@ int main(int argc, char **argv)
     else
      cout << "Nie da się zrobić trojkat" << std::endl;
 
-     a, b, c;
-
-     {if (a^2 + b^2 = c^2)
-      cout <<"To tojkat prostokatny" >> std::endl;}
-     else
-      cout << "Nie da się zrobić trojkat" << std::endl;
+  if ((a * a + b * b ==  c * c) || (a * a + c * c ==  b * b) || (b * b + c * c ==  a * a))
+        cout << "To jest trojkat prostokatny.";
+    else
+        cout << "To nie jest trojkat prostokatny.";
 	return 0;
 }
 
