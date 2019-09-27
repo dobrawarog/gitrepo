@@ -28,22 +28,53 @@
                     <div class="col-12">
                     </div <h1>
                     <hr>
-                    <form action="formularz.html" method="GET" , name="dane" id="dane">
+                    <form action="formularz.html" method="POST" , name="dane" id="dane">
+                      <input type="hidden" name="id_user" value="10">
                         <div class="from-group">
                             <label for="login">Login:</label>
                             <input type="text" name="login" id="login" required="required">
                         </div>
                         <div class="from-group">
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email"required="required" >
+                            <input type="email" name="email" id="email" required="required">
                         </div>
-                        <div class="from-group">
+                        <div class="from-check">
                             <label for="haslo">Hasło:</label>
                             <input type="password" name="haslo" id="haslo" required="required">
-                          </div>
-                            <div class="from-group">
-                            <input type="submit" value="Wyślij" class="bin btn-primary">
-</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="haslo">Wybierz plec:</label>
+                        </div>
+                        <div class="from-check">
+                            <input class="form-check-input" type="radio" name="plec" value="m" id="radio1">
+                            <label class="form-check-label" for="radio1">Men</label>
+                        </div>
+                        <div class="from-check">
+                            <input class="form-check-input" type="radio" name="plec" value="k" id="radio2">
+                            <label class="form-check-label" for="radio2">Kobieta</label>
+                        </div>
+                        <div class="from-check">
+                            <input class="form-check-input" type="radio" name="plec" value="n" id="radio3">
+                            <label class="form-check-label" for="radio3">Odmowa</label>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <label for="dodatek1">Wybierz dodatek:</label>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" name="dodatek1" value="d1" id="dodatek1">
+                                    <label class="form-check-label" for="dodatek1">dodatek1</label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" name="dodatek2" value="d2" id="dodatek2">
+                                    <label class="form-check-label" for="dodatek1">dodatek1</label>
+                                </div>
+                                <select name="plec2" class="form-control">
+                                    <option selected value="m">Men</option>
+                                    <option selectedvalue="k">Kobieta</option>
+                                    <option selected value="n">Odmowa</option>
+                                    <div class="from-group">
+                                        <input type="submit" value="Wyślij" class="bin btn-primary">
+                                    </div>
                     </form>
                 </div>
         </div>
