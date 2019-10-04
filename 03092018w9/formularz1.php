@@ -32,10 +32,18 @@
  <?php
  echo '<h2>przetwarzanie formularza</h2>';
  print_r($_POST);
- if (isset($_POST['login']))
- echo '<p>Witaj '.$_POST['login'].'</p>';
+
+ foreach ($$_POST as $key => $value) {
+   echo $k.' '.$v.'<br>';
+   ${$k} = htmlspecialchars(trim($v));
+ }
+ if (isset($login))
+ {
+echo '<p>Witaj '.$login.'</p>';
+echo '<p>Twoje haslo: '.$haslo.'</p>';
+}
 else
-  echo'<p> Zaloguj sie</p>'
+  echo'<p>Zaloguj sie</p>';
  ?>
         </div>
       </div>
