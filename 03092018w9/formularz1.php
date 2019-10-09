@@ -33,8 +33,10 @@
  echo '<h2>przetwarzanie formularza</h2>';
  print_r($_POST);
 
- foreach ($$_POST as $key => $value) {
+ foreach ($_POST as $key => $value) {
    echo $k.' '.$v.'<br>';
+   if (strlen($v) > 15)
+    $v = substr($v, 0, 14);
    ${$k} = htmlspecialchars(trim($v));
  }
  if (isset($login))
@@ -53,12 +55,13 @@ else
                     Formularz
                     <small>– w Bootstrapie</small>
                 </h1>
+                <p> &nbsp; tag : &lt;p&lt;/p&gt; </p>
                 <hr>
                 <form action="formularz1.php" method="POST" name="dane" id="dane">
                     <input type="hidden" name="id_user" value="10">
                     <div class="form-group">
                         <label for="login">Login:</label>
-                        <input type="text" name="login" id="login" class="form-control">
+                        <input type="text" name="login" id="login" class="form-control" maxlength="15">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
