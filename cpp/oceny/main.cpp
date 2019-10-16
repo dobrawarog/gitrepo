@@ -1,16 +1,10 @@
-/*
- * tablica.cpp
- * 
- */
-
-
 #include <iostream>
-using namespace std; 
 
-int main(int argc, char **argv)
+using namespace std;
+
+int main()
 {
-   int main(int argc, char **argv)
-{	int rozmiar = 20;
+    int rozmiar = 20;
 	int tablica[rozmiar];
 	int i = 0;
 	cout << "Podaj maksymalnie 20 ocen: " << endl;
@@ -21,8 +15,5 @@ int main(int argc, char **argv)
 		cout << tablica[i] << " ";
 	}
 
-   cout << tablica[i] << " ";
-    }
-	return 0;
+    return 0;
 }
-
