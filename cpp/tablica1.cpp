@@ -9,8 +9,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    	int rozmiar = 20;
-	int rozmiar = 5;
+    int rozmiar = 20;
 	int tablica[rozmiar]; 
 	int i = 0;
 	cout << "Podaj 20 liczb: " << endl;
