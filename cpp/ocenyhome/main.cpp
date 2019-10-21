@@ -1,7 +1,3 @@
-#include <iostream>
-
-using namespace std;
-
 
 #include <iostream>
 
@@ -40,7 +36,6 @@ int main(int argc, char **argv)
     cin >> rozmiar;
 
     int liczby[rozmiar];
-
     pobierzliczby(liczby, rozmiar);
     suma(liczby, rozmiar);
     srednia(liczby, rozmiar);
