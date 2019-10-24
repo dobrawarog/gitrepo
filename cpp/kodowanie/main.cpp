@@ -19,7 +19,7 @@ void litery2liczby(char tabzn[], int rozmiar){
 void koduj(char tabzn[], int rozmiar = 11){
     int i = 0;
     for (i = 0; i<rozmiar; i++){
-        cout <<" - "<<(int)tabzn[i] << endl;
+    cout << tabzn[i]<<" - "<<(int)tabzn[i] << endl;
     }
     }
 
@@ -32,11 +32,11 @@ void odkoduj (int tabli[], int rozmiar=11){
 
 int main(int argc, char **argv)
 {
-    int rozmiar = 13;
+    int rozmiar = 11;
     char napis2[11] = "Czesc";
     koduj(napis2, rozmiar);
     cout<< endl;
-    int napis3[11] = {};
+    int napis3[11] = { 67, 122, 101, 115, 99 };
     odkoduj(napis3, rozmiar);
     return 0;
 }
