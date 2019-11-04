@@ -2,8 +2,6 @@
 
 using namespace std;
 #define ROZMIAR 100
-
-using namespace std;
 int i;
 
 int main(int argc, char **argv)
@@ -16,7 +14,7 @@ int main(int argc, char **argv)
 		if(tekst[i]==' ')
 		wyrazy++;
 		}
-	cout << "W --> " << tekst << "<-- mamy " << wyrazy << " wyrazów." << endl;
+	cout << "W --> " << tekst << "<-- mamy " << wyrazy << " wyrazy." << endl;
 
 	return 0;
 }

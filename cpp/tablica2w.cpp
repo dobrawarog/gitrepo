@@ -17,7 +17,7 @@ int main(int argc, char **argv)
     //cout << "++++ Tablica" << i <<  "++++Tablica" << endl;
         for (j=0; j<M;j++ ){
             //cout << i << "-" << j << endl;
-            tab2W[i][j] = rand() %10;
+            tab2W[i][j] = rand();
             cout << tab2W[i][j] << " ";
         }
         cout << endl;
