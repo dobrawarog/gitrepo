@@ -18,7 +18,7 @@
 	<input type="text" id="b">
 	<br>
 	<button id="oblicz" onclick="nwd1()">Oblicz NWD</button>
-	<button id="oblicz" onclick="nwd1()">Oblicz NWD2</button>
+	<button id="oblicz" onclick="nwd2()">Oblicz NWD2</button>
 	<hr>
 	<p class="wynik"></p>
 	<p class="wynik"></p>
@@ -54,8 +54,8 @@
 		}
 		w = document.getElementsByClassName("wynik");
 		w[1].innerHTML = "NWD("+a1+", "+b1+") =" + b;
-		document.getElementById("a").value = ' ';
-		document.getElementById("b").value = ' ';
+		a = document.getElementById("a").value = ' ';
+		b = document.getElementById("b").value = ' ';
 		
 	}
 </script>
