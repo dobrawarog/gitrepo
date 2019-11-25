@@ -16,7 +16,6 @@ int fibonacci_it(int n) {
     if (n == 1) return 1;
     
     for (int i=2; i<n; i++){
-        cout << i <<": fib(" << fibonacci_it(i-2) << "," << fibonacci_it(i-1) << ") = " << fibonacci_it(i) << endl;
         wynik = a + b; //1 //2 //3
         b = a; //1 //1 //2
         a = wynik; //1 //2 //3
@@ -27,7 +26,7 @@ int fibonacci_it(int n) {
 int main(int argc, char **argv)
 {
     for (int i=0; i < 20; i++){
-        fibonacci_it(19);
+        cout << i <<": fib(" << fibonacci_it(i-2) << "," << fibonacci_it(i-1) << ") = " << fibonacci_it(i) << endl;
     }
 	return 0;
 }
