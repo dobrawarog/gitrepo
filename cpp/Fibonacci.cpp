@@ -27,8 +27,10 @@ int fibonacci_it(int n) {
 int main(int argc, char **argv)
 {
     for (int i=0; i < 20; i++){
-        fibonacci_it(19);
+	for (int i=0; i < 20; i++) {
+		cout << i << ": fib(" << fibonacci_it(i-2) << ", " << fibonacci_it(i-1)  << ") =" << fibonacci_it(i) << endl;
+	}
+ 
     }
 	return 0;
 }
-
