@@ -1,5 +1,6 @@
 /*
  * reszta.cpp
+<<<<<<< HEAD
  * 
  * Copyright 2019 pc <pc@DESKTOP-FN8QH4V>
  
@@ -72,3 +73,21 @@ int main(int argc, char **argv)
 	return 0;
 }
 
+=======
+ */
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char **argv)
+{
+	
+	return 0;
+}
+R = 69;
+R = 69%50=1
+R = 60 - 50*1 = 19
+19 - 10 * (19%10) = 9
+9 - 5 *1(9%5) 
+>>>>>>> af199e25e53c28060544b591c065c2b521ffad70
