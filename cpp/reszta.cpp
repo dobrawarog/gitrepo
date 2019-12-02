@@ -1,6 +1,5 @@
 /*
  * reszta.cpp
-<<<<<<< HEAD
  * 
  * Copyright 2019 pc <pc@DESKTOP-FN8QH4V>
  
@@ -37,23 +36,41 @@ void wczytajNominaly(){
 	//}
 	for(int i = 0; i < liczbaNominalow; i++){
 		cout << nominaly[i] << " "; }
-	}
+}
 
 
-int znajdzReszte(int reszta){
+int policzNominal(int n) {
+    int i = 0;
+    nominaly[i];
+    int ile = 0;
+    for(i = 0, i < LiczbaNominalow, i++){
+    if ( n > nominaly[i]) break;
+    if (nominaly[i] == n) 
+        ile++;
+     }   
+    return ile;     
+}
+
+void znajdzReszte(int reszta){
 	cout << "Wypłacone nominały: " << endl;
 	int aktualnyNominal = 0;
 
 	while(reszta > 0 && aktualnyNominal < liczbaNominalow){
 		cout << "reszta = " << reszta << endl;
-		znajdz najwiekszy dostepny nominal mniejszy ood reszt;
+        while(aktualnyNominal < liczbaNominalow && reszta < nominaly[aktualnyNominal]) 
+        ++aktualnyNominal; 
+        int nominal = nominaly[aktualnyNominal];
 		cout << "aktualny nominał: " << nominaly[aktualnyNominal] << endl;
-		oblicz wymagana ilosc nominalów
-		pomniejsz reszte
-
+        
+        if (aktualnyNominal < liczbaNominalow && reszta >=[aktualnyNominal]){
+        int liczbaBanktow = reszta / nominaly[aktualnyNominal];
+        cout << "Dostępnych nominałów" << policzNominal(nominal);
+        reszta = reszta - liczbaBanktow * nominaly[aktualnyNominal];
+        cout <<liczbaBanktow << "x" << nominaly[aktualnyNominal] << "zl" << endl; 
+    }
 	}
-
 }
+
 // [50, 50, 50, 20, 10, 10, 5, 5, 5, 1]
 int main(int argc, char **argv)
 {
@@ -64,7 +81,7 @@ int main(int argc, char **argv)
 	cin >> wplata;
 
 	do { // petla blokująca
-		cout << "POdaj wpłatę: ";
+		cout << "Podaj wpłatę: ";
 		cin >> wplata;
 	} while(wplata < cena);
 
@@ -72,22 +89,3 @@ int main(int argc, char **argv)
 
 	return 0;
 }
-
-=======
- */
-
-
-#include <iostream>
-using namespace std;
-
-int main(int argc, char **argv)
-{
-	
-	return 0;
-}
-R = 69;
-R = 69%50=1
-R = 60 - 50*1 = 19
-19 - 10 * (19%10) = 9
-9 - 5 *1(9%5) 
->>>>>>> af199e25e53c28060544b591c065c2b521ffad70
