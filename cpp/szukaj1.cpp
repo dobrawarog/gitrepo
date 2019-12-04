@@ -29,20 +29,23 @@ int szukaj_re(int liczby[], int lewy, int prawy, int n){
      }
 }
 
-int szukaj_re2(int liczby[], int lewy, int prawy, int n){
-        if ( lewy > prawy) {
-            cout << "Elementu nie znaleziono" << endl;
-         return -1;  
-     } else {
-         if (liczby[lewy] == n){
-             cout << "Element znaleziono !" << endl;
-             return lewy;
-         } else {
-             szukaj_re2(liczby, lewy-1, prawy, n);
-         }
-     }
+int szukaj_re2(int liczby[], int lewy, int prawy, int n) {
+	if (lewy > prawy) {
+		cout << "Elementu nie znaleziono!";
+		return -1;
+	} else {
+		if (liczby[prawy] == n){
+			cout << "Element znaleziono!" << endl;
+		if (liczby[prawy] == n) {
+			cout << "Znaleziono element" << endl;
+			return prawy;
+			} else {
+				szukaj_re(liczby, prawy+1, lewy, n);
+		} else {
+			szukaj_re2(liczby,prawy -1,lewy, n);
+		}
+	}
 }
-
 int main(int argc, char **argv)
 {
 	int liczby[] = {3, 8, 3, 9, 10, 45, 37};
@@ -57,5 +60,4 @@ int main(int argc, char **argv)
         } 
 	return 0;
 }
-
-//napisz funkcja szukajre tablica przeszukiwana jest od końca 
+ 
