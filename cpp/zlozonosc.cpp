@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;  
 
+// Ln = n
 int main(int argc, char **argv)
 {
 	int i = 0; 
