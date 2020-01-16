@@ -1,0 +1,78 @@
+
+kompilowane (C++, kompilator, linker)
+interpretowane (php, python, Java Script)
+#autoryzacja przyznanie uprawnień 
+wykonanie skryptu php w wierszu poleceń
+-f plik.php
+php plik.php
+
+lokalne wykonanie skryptów PHP
+interpreter
+
+zdalne wykonanie kodu php na stronie serwera WWW
+interpreter
+dedykowanie modułu serwera 
+
+aby dane wprowadzić dane tekstowe 
+print()
+echo()
+echo
+
+po stronie serwera www kod php jest wykonany w plikach
+.php
+
+kod php powinien byc ujęty w znaczniki
+<?php ?>
+
+dane które zmieniają dane z bazy formularz 
+POST
+
+po stronie swerwera w skrypcie php dane z formularza logowania dostępne są 
+w tablicy $_POST
+
+jesli chemy wyszukać w serwisie WWW jakies informacje, dane przesyłamy zazwyczaj w żądaniu
+GET
+
+walidacja danych z formularzy polega na 
+(sprawdzanie poprawności danych)
+używanie odpowiednich atrybutów HTML5 w formularzach
+sprawdzanie po stronie serwera czy dane spełniają określone kryteria
+ 
+Java Scriptu można uzyć do walidacji danych
+po stronie serwera 
+po stronie klienta 
+
+sprawdzanie poprawności loginu i hasła to przykałd 
+walidacja 
+autentykacja
+
+do sprawdzenia czy zmienna istnienje i nie jest wartością NULL
+isset()
+
+funkcja array_key_exists($key, $array) sprawdza; 
+czy w tabeli istnieje podany klucz 
+
+do sprawdzenia czy zmienna nie istnieje lub jest równa fałszowi 
+empty()
+
+zaznacz funkcje php które można użyć w sprawdzeniu poprawnośći przesyłanych danych
+strlen()
+htmlspecialchars()
+trim()
+
+zmienne w php
+są tworzone w momencie pierwszego przypisania
+
+do tworzenia nowych zmiennych podczas wykonywania skryptu użyjemy zapisu
+$($zmienna) = 'wartosc' 
+
+aby wartość znalasłą się wciągu znakoqwym
+"zmienna:$zmienna"
+"zmienna:($tab['zmienna'])"
+
+jeżeli w formularzu HTML typu POST mamy pole o nazwie kod przesłaną wartość do odczytamy za pomocą
+$-POST['kod']
+
+public static 
+Klasa::$dane[0]
+
