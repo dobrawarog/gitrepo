@@ -28,3 +28,17 @@ if (a + b > c && a + c > b && b + c > a){
 </script>
 <!-- edit your html here -->
 
+
+
+<script>
+// Edit your script here
+var dlusgosc = 10; //liczba
+var imie = "Dorota" // string
+var tablica = ["Fiat" , "Skoda"];
+document.write(tablica[1]);
+var osoba = {imie:"Adam" , nazwisko "Słodowy", wiek: 25};
+document.write(osoba.imie, sosoba.wiek);
+
+</script>
+<!-- edit your html here -->
+

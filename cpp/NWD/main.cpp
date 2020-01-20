@@ -16,7 +16,8 @@ int main()
     a = k;
     NWD = a;
     cin >> NWD;
-
+    
+    
 
     return 0;
 }
