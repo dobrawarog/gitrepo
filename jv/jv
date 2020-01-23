@@ -1,0 +1,9 @@
+DOM model - obiektowy model dokumentu 
+~obiekt window~ 
+window.alert(c); 
+drzewo - struktura podporządkowania danych 
+rodzic (parent)
+dzieci(child)
+rodzeństwo (sibling)
+relacje DOM
+interefjs dostawanie się do GET.
