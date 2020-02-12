@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Użycie tablic</title>
+<meta name="generator" content="Geany 1.32" />
+</head>
+
+<body>
+    <p id ="samochod"></p>
+<hr>
+<input type="text" id="indeks"> 
+<button onclick = "displayCar()" >Wpisz</button>
+<script type="text/javascript">
+    var cars = ["Saab", "Fiat", "Opel"];
+    alert(cars.lenght);
+    
+function displayCar(){
+        var i = document.getElementById("indeks").value
+     alert(i);   
+        if ( i > -1 && i < cars.length -1){
+	window.alert('samochod');
+} else {
+	window.alert('nie ma takiego samochodu!');
+}
+}
+</script>
+</body>
+
+</html>
