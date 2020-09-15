@@ -1,0 +1,10 @@
+GIMP - ZALICZENIE
+Zaliczenie polega na przygotowaniu dowolnego montażu
+z obrazów z katalogu (archiwum) Obrazki2 lub innych.
+
+Liczy się pomysł, zastosowane techniki, np. operacje na warstwach,
+filtry, selekcje itp.
+
+Plik zapisujemy w formacie XCF, w którym poszczególne obiekty
+składające się na montaż powinny znajdować się na osobnych
+warstwach.
